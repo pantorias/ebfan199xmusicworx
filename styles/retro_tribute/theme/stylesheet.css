@@ -1,0 +1,5 @@
+/* 1. Import the parent prosilver structural framework */
+@import url("../../prosilver/theme/stylesheet.css");
+
+/* 2. Import your retro design rules and assets */
+@import url("./custom.css")

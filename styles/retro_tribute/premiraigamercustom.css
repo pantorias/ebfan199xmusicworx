@@ -1,0 +1,230 @@
+/* ==========================================================================
+   GLOBAL CANVAS & TYPOGRAPHY SETTINGS
+   ========================================================================== */
+html {
+    background-color: #0f1115 !important;
+    background-image: url("./images/bgwebsite.png") !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+}
+
+body {
+    min-height: 100vh;
+    background: transparent !important; /* Lets the html image texture shine through */
+    color: #dfe2ea;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   MAIN SITE CONTAINER (FLOATING ARCHITECTURE)
+   ========================================================================== */
+.custom-site-wrapper {
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    background-color: #1a1a24;
+    border: 3px solid #ffcc00;
+    box-shadow: 8px 8px 0px #000000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   HEADERBAR AND LOGO CONFIGURATION
+   ========================================================================== */
+.headerbar {
+    background: linear-gradient(to bottom, #1e222d 0%, #11141a 100%) !important;
+    border: 2px solid #ffcc00 !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.headerbar a, .headerbar h1, .headerbar p {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.headerbar a.site_logo, a.site_logo, .site_logo {
+    background-image: url("./images/logo.png") !important;
+    display: inline-block !important;
+    width: 225px !important;  
+    height: 78px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+}
+
+#search-box {
+    display: none !important;
+}
+
+/* ==========================================================================
+   CORE LAYOUT STRETCH RESETS
+   ========================================================================== */
+#wrap, .page-width, .page-body, #page-body, .action-bar, .navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+#wrap {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 15px !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-body {
+    padding: 0 10px !important;
+}
+
+.navbar, .forabg, .forumbg, .panel {
+    width: 100% !important;
+    clear: both;
+}
+
+/* ==========================================================================
+   FORUM CATEGORIES & BOARDS (RETRO GRADIENTS)
+   ========================================================================== */
+.forabg, .forumbg, ul.topiclist {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
+
+.forabg, .forumbg {
+    background: linear-gradient(to bottom, #11141a 0%, #020203 100%) !important;
+    border: 2px solid #ffcc00 !important;
+    border-radius: 0px !important;
+    margin-bottom: 15px !important;
+}
+
+li.header {
+    background-color: #11141a !important;
+    background-image: none !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+li.header a, li.header dt, li.header dd, li.header dt .list-inner {
+    color: #ffcc00 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 1px #000000 !important;
+}
+
+li.row, li.row dl {
+    width: 100% !important;
+}
+
+/* ==========================================================================
+   STATISTICS & METADATA SECTION TITLE BLOCKS
+   ========================================================================== */
+.stat-block h3, .stat-block h3 a, #page-body h3 {
+    color: #ffcc00 !important;
+    font-family: "Courier New", Courier, monospace !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border-bottom: 1px dashed #3b3f54 !important;
+    padding-bottom: 3px !important;
+    margin-top: 20px !important;
+}
+
+/* ==========================================================================
+   UNIQUE USERNAME PROFILES
+   ========================================================================== */
+a[href*="u=2"], .username-coloured[href*="u=2"] {
+    color: #ffcc00 !important; 
+    font-weight: bold !important;
+    text-shadow: 1px 1px 0px #000 !important;
+}
+
+a[href*="u=85"] {
+    color: #55ff55 !important;
+    font-style: italic !important;
+}
+
+a[href*="u=84"] {
+    color: #ff55ff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   NAVIGATION ROWS (BOARD INDEX STRIPS)
+   ========================================================================== */
+/* Recolor the light-blue navigation rows completely */
+.navbar {
+    background-color: #11141a !important;
+    border: 2px solid #3b3f54 !important;
+    border-radius: 0px !important;
+    margin-bottom: 10px !important;
+    padding: 5px 10px !important;
+}
+
+/* Fix link text colors inside the navigation strips */
+.navbar a, .navlinks a, .breadcrumbs a {
+    color: #ffcc00 !important; /* Crisp high-contrast yellow links */
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.navbar a:hover, .navlinks a:hover {
+    color: #ffffff !important; /* Turns white on hover */
+    text-decoration: underline !important;
+}
+
+/* Fix the subtle text indicators like the bullet points/arrows next to links */
+.navbar .icon, .navbar span {
+    color: #dfe2ea !important;
+}
+
+/* ==========================================================================
+   INNER FORUM ROWS & PANEL BLOCKS
+   ========================================================================== */
+/* Darken the individual forum block row that was previously white/gray */
+li.row {
+    background-color: #1a1a24 !important; /* Blends into your container backing */
+    border-top: 1px solid #2d3142 !important;   /* Subtle pixel separation line */
+    border-bottom: 1px solid #11141a !important;
+    margin: 0 !important;
+}
+
+/* Give rows an alternate darker color when hovering over them */
+li.row:hover {
+    background-color: #222530 !important;
+}
+
+/* Fix text and links inside the forum rows */
+a.forumtitle, a.topictitle {
+    color: #ffffff !important; /* White links for maximum visibility */
+    font-weight: bold !important;
+    font-size: 1.1em !important;
+}
+
+a.forumtitle:hover, a.topictitle:hover {
+    color: #ffcc00 !important; /* Classic yellow link flash on hover */
+    text-decoration: underline !important;
+}
+
+/* Force description texts and stats (Topics, Posts, Last Post info) to be readable */
+.forum-description, .topic-description, .posts, .topics, .views, .lastpost span {
+    color: #dfe2ea !important;
+    font-family: "Courier New", Courier, monospace !important;
+}
+
+/* Ensure secondary username links in the "Last Post" column match your tracking colors */
+.lastpost a {
+    font-weight: bold !important;
+}

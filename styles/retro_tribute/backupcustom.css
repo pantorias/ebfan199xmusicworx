@@ -1,0 +1,159 @@
+body {
+    background-color: #0f1115 !important;
+    color: #dfe2ea;
+    font-family: "Courier New", Courier, monospace;
+}
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    background-color: #0f1115 !important;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("./images/bgwebsite.png");
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+}
+/* .custom-site-wrapper OLDDDDD{
+    max-width: 980px;
+    margin: 20px auto;
+    background-color: #1a1a24;
+    border: 3px solid #ffcc00;
+    box-shadow: 5px 5px 0px #000;
+} */
+/* .custom-site-wrapper OLD{
+    max-width: 980px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a24;
+    border-left: 3px solid #ffcc00;
+    border-right: 3px solid #ffcc00;
+    box-shadow: 5px 5px 0px #000;
+    box-sizing: border-box;
+} */
+.custom-site-wrapper {
+    max-width: 1200px !important;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #1a1a24;
+    border-left: 3px solid #ffcc00;
+    border-right: 3px solid #ffcc00;
+    box-shadow: 5px 5px 0px #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+/* .forabg, .forumbg {
+    background-color: #222530 !important;
+    background-image: none !important;
+    border: 2px solid #3b3f54 !important;
+    border-radius: 0px !important;
+} */
+li.header {
+    background-color: #11141a !important;
+    background-image: none !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.headerbar {
+    background: linear-gradient(to bottom, #1e222d 0%, #11141a 100%) !important;
+    border: 2px solid #ffcc00 !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    padding: 15px !important;
+}
+.headerbar a, .headerbar h1, .headerbar p {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px #000000;
+}
+.headerbar a.site_logo, a.site_logo,.site_logo {
+    background-image: url("./images/logo.png") !important;
+    display: inline-block !important;
+    
+    width: 225px !important;  
+    height: 78px !important;
+    
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+}
+a[href*="u=2"], .username-coloured[href*="u=2"] {
+    color: #ffcc00 !important; /* Vivid Yellow */
+    font-weight: bold !important;
+    text-shadow: 1px 1px 0px #000 !important;
+}
+a[href*="u=85"] {
+    color: #55ff55 !important;
+    font-style: italic !important;
+}
+a[href*="u=84"] {
+    color: #ff55ff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+}
+#wrap {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+.page-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 10px !important;
+}
+.navbar, .forabg, .forumbg, .panel {
+    width: 100% !important;
+    clear: both;
+}
+#wrap, .page-width, .page-body, #page-body, .action-bar, .navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+}
+#wrap {
+    padding: 0 15px !important;
+    margin: 0 auto !important;
+}
+
+.forabg, .forumbg, ul.topiclist {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
+li.row, li.row dl {
+    width: 100% !important;
+}
+#search-box {
+    display: none !important;
+}
+.forabg, .forumbg {
+    background: linear-gradient(to bottom, #11141a 0%, #020203 100%) !important;
+    border: 2px solid #ffcc00;
+}
+li.header a, li.header dt, li.header dd, li.header dt .list-inner {
+    color: #ffcc00 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 1px #000000 !important;
+}
+.stat-block h3, .stat-block h3 a, #page-body h3 {
+    color: #ffcc00 !important;
+    font-family: "Courier New", Courier, monospace !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    border-bottom: 1px dashed #3b3f54 !important;
+    padding-bottom: 3px !important;
+    margin-top: 20px !important;
+}
